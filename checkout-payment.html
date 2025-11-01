@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>RainyDays | Payment Options</title>
+	<meta name="description" content="The third step of checkout where you select your preferred payment option." />
+	<link rel="stylesheet" href="css/main.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a87332500a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header class="checkout-header">
+		<div class="header-content">
+			<a href="index.html"><img class="logo" src="images/rainydays-logo.png" alt="RainyDays Logo" /></a>
+		</div>
+	</header>
+	<main>
+		<div class="grid-wrapper">
+			<div class="back-link-wrapper">
+				<a href="shopping-bag.html" class="back-link">
+					<i class="fa-solid fa-chevron-left"></i> Return to shopping cart</a>
+			</div>
+			<form class="form-section">
+				<h1>Payment options</h1>
+				<label class="radio-button">
+					<input type="radio" name="payment" value="paypal">
+					<div class="payment-text">
+						<span class="payment-title">PayPal</span>
+						<span class="payment-description">Pay easily using your PayPal account</span>
+					</div>
+				</label>
+				<label class="radio-button credit-card-option">
+					<input type="radio" name="payment" value="credit-card" checked>
+					<div class="payment-text">
+						<span class="payment-title">Credit Card</span>
+						<span class="payment-description">Visa, MasterCard, American Express</span>
+					</div>
+				</label>
+				<div class="credit-card-info">
+					<div class="cc-fields">
+						<label for="card-number">Card Number</label>
+						<input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+						<label for="expiry">Expiry Date</label>
+						<input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+						<label for="cvc">CVC</label>
+						<input type="text" id="cvc" name="cvc" placeholder="123">
+					</div>
+				</div>
+				<label class="radio-button">
+					<input type="radio" name="payment" value="apple-pay">
+					<div class="payment-text">
+						<span class="payment-title">Apple Pay</span>
+						<span class="payment-description">Quick payment with Apple devices</span>
+					</div>
+				</label>
+				<a href="checkout-confirmation.html" class="btn-next">Complete purchase</a>
+			</form>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer-links">
+			<div class="column">
+				<h3>About RainyDays</h3>
+				<ul>
+					<li><a href="/our-history.html">Our history</a></li>
+					<li><a href="/our-brands.html">Our brands</a></li>
+					<li><a href="/our-values.html">Our values</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Customer Service</h3>
+				<ul>
+					<li><a href="/customer-support.html">Customer support</a></li>
+					<li><a href="/contact-us.html">Contact us</a></li>
+					<li><a href="/shipping.html">Shipping</a></li>
+					<li><a href="/payments.html">Payments</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-logo">
+			<img src="/images/rainydays-logo.png" alt="RainyDays Logo" />
+		</div>
+		<p class="footer-copy">&copy; 2024 RainyDays. All rights reserved.</p>
+	</footer>
+</body>
+
+</html>

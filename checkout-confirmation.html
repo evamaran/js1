@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>RainyDays | Order Confirmation</title>
+	<meta name="description" content="The confirmation that your order was successfully completed." />
+	<link rel="stylesheet" href="css/main.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a87332500a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header class="checkout-header">
+		<div class="header-content">
+			<a href="index.html"><img class="logo" src="images/rainydays-logo.png" alt="RainyDays Logo" /></a>
+		</div>
+	</header>
+	<main>
+		<div class="grid-wrapper">
+			<section class="confirmation-section">
+				<h1>Thank you for your purchase!</h1>
+				<p>A confirmation email has been sent to your email address.</p>
+				<p>We will notify you when your order has shipped.</p>
+				<h2>Your Order</h2>
+				<table class="order-summary-table">
+					<thead>
+					<tr>
+						<th>Product</th>
+						<th>Size</th>
+						<th>Quantity</th>
+						<th>Unit Price</th>
+						<th>Subtotal</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="order-product-cell">
+									<img src="/images/aero-shell.png" alt="Aero Shell jacket" class="order-item-img"/>
+									<span>Aero Shell</span>
+								</div>
+							</td>
+							<td>M</td>
+							<td>1</td>
+							<td>€139.00</td>
+							<td>€139.00</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="order-product-cell">
+									<img src="/images/arctic-guard.png" alt="Arctic Guard jacket" class="order-item-img"/>
+									<span>Arctic Guard</span>
+									<span class="order-sale-badge">30 % OFF</span>
+								</div>
+							</td>
+							<td>L</td>
+							<td>1</td>
+							<td>
+								<span class="-order-original-price">€139.00</span>
+								<span class="order-sale-price">€97.30</span>
+							</td>
+							<td>€97.30</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="4" class="order-total-label">Total</td>
+							<td class="order-total-value">€236.30</td>
+						</tr>
+					</tfoot>
+				</table>
+				<a href="index.html" class="btn-next">Return to Home</a>
+			</section>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer-links">
+			<div class="column">
+				<h3>About RainyDays</h3>
+				<ul>
+					<li><a href="/our-history.html">Our history</a></li>
+					<li><a href="/our-brands.html">Our brands</a></li>
+					<li><a href="/our-values.html">Our values</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Customer Service</h3>
+				<ul>
+					<li><a href="/customer-support.html">Customer support</a></li>
+					<li><a href="/contact-us.html">Contact us</a></li>
+					<li><a href="/shipping.html">Shipping</a></li>
+					<li><a href="/payments.html">Payments</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-logo">
+			<img src="/images/rainydays-logo.png" alt="RainyDays Logo" />
+		</div>
+		<p class="footer-copy">&copy; 2024 RainyDays. All rights reserved.</p>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+/* === CHECKOUT COMPONENTS === */
+
+.back-link-wrapper {
+	margin-bottom: 2rem;
+}
+
+.back-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: #0B3A40;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.back-link:hover {
+	text-decoration: underline;
+}
+
+.form-section {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	padding: 16px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
+}
+
+form label {
+	font-weight: 500;
+	font-size: 0.9rem;
+	color: #0B3A40;
+	margin-bottom: 0px;
+}
+
+form input {
+	width: 100%;
+	padding: 3px 6px;
+	border: 1px solid #E0E0E0;
+	border-radius: 4px;
+	background-color: #F2F4F7;
+	font-size: 0.85rem;
+	line-height: 1.1;
+	margin-bottom: 4px;
+}
+
+.btn-next {
+	display: inline-block;
+	margin-top: 1rem;
+	padding: 10px 16px;
+	background-color: #F4AB67;
+	color: #0B3A40;
+	border: none;
+	border-radius: 6px;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	align-self: self-start;
+	text-decoration: none;
+}
+
+.btn-next:hover {
+	background-color: #e89a55;
+}
+
+.radio-button {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	border: 2px solid #0B3A40;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+	background-color: #fff;
+	color: #0B3A40;
+}
+
+.radio-button input[type="radio"] {
+	margin: 0;
+	accent-color: #0B3A40;
+	width: 1rem;
+	height: 1rem;
+	flex-shrink: 0;
+}
+
+.radio-button:hover,
+.radio-button:has(input:checked) {
+	background-color: #F0F4F5;
+	border-color: #0B3A40;
+}
+
+.delivery-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.delivery-title {
+	font-weight: 600;
+	font-size: 1rem;
+	color: #0B3A40;
+}
+
+.delivery-description {
+	font-size: 0.9rem;
+	color: #333;
+}
+
+.credit-card-option:has(input:checked)+.credit-card-info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	margin-top: 1rem;
+}
+
+.credit-card-info {
+	display: none;
+}
+
+.credit-card-info label {
+	font-size: 0.9rem;
+	margin-bottom: 2px;
+	color: #0B3A40;
+}
+
+.credit-card-info input {
+	padding: 6px 10px;
+	border: 1px solid #E0E0E0;
+	border-radius: 4px;
+	background-color: #F2F4F7;
+	font-size: 0.85rem;
+}
+
+.confirmation-section {
+	grid-column: 3 / span 8;
+	padding: 2rem;
+	text-align: center;
+}
+
+.confirmation-section h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: #0B3A40;
+}
+
+.confirmation-section p {
+	font-size: 1rem;
+	margin-bottom: 2rem;
+	color: #333;
+}
+
+.order-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.order-summary-table th,
+.order-summary-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-product-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.order-item-img {
+  max-width: 60px;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 6px;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.order-summary-table td span {
+  vertical-align: middle;
+}
+
+.order-sale-badge {
+  display: inline-block;
+  background-color: #f4a261;
+  color: #fff;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-left: 6px;
+}
+
+.order-original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.order-sale-price {
+  color: #d62828;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.order-total-label {
+  text-align: right;
+  font-weight: bold;
+}
+
+.order-total-value {
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+@media (min-width: 601px) {
+	.back-link-wrapper {
+		grid-column: 3 / span 8;
+		margin-bottom: 1.5rem;
+	}
+
+	.form-section {
+		grid-column: 3 / span 8;
+		gap: 0;
+	}
+
+	form label {
+		font-size: 0.95rem;
+		margin-bottom: 2px;
+	}
+
+	form input {
+		font-size: 0.95rem;
+		padding: 6px 10px;
+		margin-bottom: 10px;
+	}
+
+	form button {
+		font-size: 1rem;
+		padding: 12px 20px;
+		margin-top: 16px;
+	}
+
+	.confirmation-section h1 {
+		font-size: 2.4rem;
+	}
+
+	.confirmation-section p {
+		font-size: 1.1rem;
+	}
+}
