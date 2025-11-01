@@ -305,7 +305,8 @@
 }
 
 .cart-table {
-  width: 90%;
+  width: auto;
+  max-width: 100%;
   border-collapse: collapse;
   margin-bottom: 2rem;
 }
