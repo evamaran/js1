@@ -305,14 +305,14 @@
 }
 
 .cart-table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
   margin-bottom: 2rem;
 }
 
 .cart-table th,
 .cart-table td {
-  padding: 12px;
+  padding: 18px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
