@@ -152,6 +152,11 @@ form input {
 	color: #333;
 }
 
+.order-table-wrapper {
+	overflow-x: auto;
+	max-width: 100%;
+}
+
 .order-summary-table {
   width: 100%;
   border-collapse: collapse;
@@ -160,6 +165,9 @@ form input {
 
 .order-summary-table th,
 .order-summary-table td {
+  word-break: break-word;
+  max-width: 100%;
+  white-space: normal;
   padding: 12px;
   text-align: left;
   border-bottom: 1px solid #ddd;
@@ -169,6 +177,8 @@ form input {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
+  min-width: 0;
 }
 
 .order-item-img {
