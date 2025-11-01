@@ -92,7 +92,7 @@
 
 .icon-group {
   display: flex;
-  gap: 12px;
+  gap: 8px;
 }
 .icon-group a {
   color: #0B3A40;
