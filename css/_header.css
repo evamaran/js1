@@ -92,11 +92,11 @@
 
 .icon-group {
   display: flex;
-  gap: 16px;
+  gap: 12px;
 }
 .icon-group a {
   color: #0B3A40;
-  font-size: 1.6rem;
+  font-size: 1rem;
   padding: 6px;
   display: flex;
   align-items: center;
