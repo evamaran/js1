@@ -15,5 +15,5 @@ async function loadComponent(containerId, filePath) {
 }
 
 // Load the shared layout components on every page
-loadComponent("header", "/components/header.html");
-loadComponent("footer", "/components/footer.html");
+loadComponent("header", "components/header.html");
+loadComponent("footer", "components/footer.html");
