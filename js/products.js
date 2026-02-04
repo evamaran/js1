@@ -18,6 +18,7 @@ async function fetchProducts() {
     }
 
     const data = await response.json();
+	console.log("API data:", data);
     const products = data.data || data;
 
     renderProducts(products);
