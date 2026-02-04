@@ -37,8 +37,7 @@ function renderProducts(products) {
       const title = product.title || "No title";
       const price = product.price || "No price";
       const image =
-        product.image ||
-        (product.images && product.images[0]?.src) ||
+        product.images?.[0]?.src ||
         "https://via.placeholder.com/300x400?text=No+image";
 
       return `
