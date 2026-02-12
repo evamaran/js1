@@ -22,6 +22,7 @@ async function fetchProduct() {
 
 // 3. Render product
 function renderProduct(product) {
+  console.log(product);
   const image =
     product.images?.[0]?.src ||
     product.image ||
