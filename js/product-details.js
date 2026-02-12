@@ -23,14 +23,13 @@ async function fetchProduct() {
 // 3. Render product
 function renderProduct(product) {
   console.log(product);
-  const image =
-    product.images?.[0]?.src ||
-    product.image ||
-    "https://via.placeholder.com/400x500?text=No+image";
+
+  const image = product.image?.url || "https://via.placeholder.com/400x500?text=No+image";
+  const alt = product.image?.alt || product.title;
 
   container.innerHTML = `
     <section class="product-details-card">
-      <img src="${image}" alt="${product.title}">
+      <img src="${image}" alt="${alt}">
       <div class="details-text">
         <h1>${product.title}</h1>
         <p class="price">${product.price} NOK</p>
