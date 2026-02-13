@@ -61,11 +61,11 @@
   font-size: 1rem;
   width: 100%;
   font-weight: bold;
-  text-align: center;
+  display: block;
 }
 
 .btn-add:hover {
-  background-color: #e89c5c; /* litt mørkere variant av #F4AB67 */
+  background-color: #e89a55;
 }
 
 /* DESKTOP */
