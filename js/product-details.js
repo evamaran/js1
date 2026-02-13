@@ -28,29 +28,28 @@ function renderProduct(product) {
   const alt = product.image?.alt || product.title;
 
   container.innerHTML = `
-    <section class="product-details-card">
-      
-      <div class="product-image">
-        <img src="${image}" alt="${alt}">
-      </div>
+  <section class="product-details-card">
 
-      <div class="product-info">
-        <h1>${product.title}</h1>
-        <p class="price">${product.price} NOK</p>
-        <p class="description">${product.description}</p>
+    <div class="product-image">
+      <img src="${image}" alt="${alt}">
+    </div>
 
-        <label for="size">Size</label>
-        <select id="size" class="size-select">
-          ${product.sizes
-            .map(size => `<option value="${size}">${size}</option>`)
-            .join("")}
-        </select>
+    <div class="product-info">
+      <h1>${product.title}</h1>
+      <p class="price">${product.price} NOK</p>
+      <p class="description">${product.description}</p>
 
-        <button class="btn-add">Add to cart</button>
-      </div>
+      <label for="size">Size</label>
+      <select id="size" class="size-select">
+        ${product.sizes.map(size => `<option value="${size}">${size}</option>`).join("")}
+      </select>
 
-    </section>
-  `;
+      <button class="btn-add">Add to cart</button>
+    </div>
+
+  </section>
+`;
+
 }
 
 fetchProduct();
