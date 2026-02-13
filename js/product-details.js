@@ -29,13 +29,26 @@ function renderProduct(product) {
 
   container.innerHTML = `
     <section class="product-details-card">
-      <img src="${image}" alt="${alt}">
-      <div class="details-text">
+      
+      <div class="product-image">
+        <img src="${image}" alt="${alt}">
+      </div>
+
+      <div class="product-info">
         <h1>${product.title}</h1>
         <p class="price">${product.price} NOK</p>
-        <p>${product.description}</p>
+        <p class="description">${product.description}</p>
+
+        <label for="size">Size</label>
+        <select id="size" class="size-select">
+          ${product.sizes
+            .map(size => `<option value="${size}">${size}</option>`)
+            .join("")}
+        </select>
+
         <button class="btn-add">Add to cart</button>
       </div>
+
     </section>
   `;
 }
