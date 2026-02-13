@@ -1,0 +1,111 @@
+/* || CART WRAPPER */
+#cart {
+  margin-top: 20px;
+}
+
+/* || CART ITEM */
+.cart-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.cart-item-image {
+  width: 120px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-info h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+}
+
+.cart-item-info p {
+  margin: 3px 0;
+  color: #444;
+}
+
+/* || QUANTITY BUTTONS */
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.qty-btn {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.qty-btn:hover {
+  background: #444;
+}
+
+.cart-quantity span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* || REMOVE BUTTON */
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #c0392b;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+  margin-top: 5px;
+  text-decoration: underline;
+}
+
+.remove-btn:hover {
+  color: #e74c3c;
+}
+
+/* || TOTAL SECTION */
+.cart-total {
+  margin-top: 30px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  text-align: right;
+}
+
+.cart-total h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* || MEDIA QUERY (601px+) */
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cart-item-info {
+    width: 100%;
+  }
+
+  .cart-total {
+    text-align: left;
+  }
+}

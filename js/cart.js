@@ -32,3 +32,18 @@ export function addToCart(product, selectedSize) {
 
   saveCart(cart);
 }
+
+// ⭐ Legg de nye funksjonene HER — etter addToCart, men ikke inni den
+
+export function getCartCount() {
+  const cart = getCart();
+  return cart.reduce((total, item) => total + item.quantity, 0);
+}
+
+export function updateCartCount() {
+  const countElement = document.getElementById("cart-count");
+  if (!countElement) return;
+
+  const count = getCartCount();
+  countElement.textContent = count;
+}
