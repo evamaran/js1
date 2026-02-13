@@ -80,4 +80,8 @@
   .product-info {
     flex: 1;
   }
+
+  #product-details {
+	grid-column: 3 / span 8;
+  }
 }
