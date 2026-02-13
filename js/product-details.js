@@ -10,13 +10,13 @@ async function fetchProduct() {
   container.innerHTML = "<p>Loading...</p>";
 
   try {
-    const response = await fetch(`${API_URL}/${id}`);
-    const data = await response.json();
-    const product = data.data;
+	const response = await fetch(`${API_URL}/${id}`);
+	const data = await response.json();
+	const product = data.data;
 
-    renderProduct(product);
+	renderProduct(product);
   } catch (error) {
-    container.innerHTML = "<p>Could not load product.</p>";
+	container.innerHTML = "<p>Could not load product.</p>";
   }
 }
 
@@ -30,26 +30,30 @@ function renderProduct(product) {
   container.innerHTML = `
   <section class="product-details-card">
 
-    <div class="product-image">
-      <img src="${image}" alt="${alt}">
-    </div>
+	<div class="product-image">
+	  <img src="${image}" alt="${alt}">
+	</div>
 
-    <div class="product-info">
-      <h1>${product.title}</h1>
-      <p class="price">${product.price} NOK</p>
-      <p class="description">${product.description}</p>
+	<div class="product-info">
+	  <h1>${product.title}</h1>
+	  <p class="price">${product.price} NOK</p>
+	  <p class="description">${product.description}</p>
 
-      <label for="size">Size</label>
-      <select id="size" class="size-select">
-        ${product.sizes.map(size => `<option value="${size}">${size}</option>`).join("")}
-      </select>
+	  <label for="size">Size</label>
+	  <select id="size" class="size-select">
+		${product.sizes.map(size => `<option value="${size}">${size}</option>`).join("")}
+	  </select>
 
-      <button class="btn-add">Add to cart</button>
-    </div>
+	  <button class="btn-add">Add to cart</button>
+	</div>
 
   </section>
 `;
-
+	// Add to cart button event listener
+	document.querySelector(".btn-add").addEventListener("click", () => {
+	const selectedSize = document.querySelector("#size").value;
+	addToCart(product, selectedSize);
+	});
 }
 
 fetchProduct();
