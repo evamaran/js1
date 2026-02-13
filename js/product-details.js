@@ -50,7 +50,6 @@ function renderProduct(product) {
   </section>
 `;
 
-
 }
 
 fetchProduct();
