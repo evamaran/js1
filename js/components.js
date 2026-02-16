@@ -6,7 +6,7 @@ async function loadComponent(id, file) {
     container.innerHTML = html;
 
 	if (id === "header") {
-		document.dispatchEvent(new Event("headerLoaded"));
+		document.dispatchEvent(new Event("header-loaded"));
 	}
 
 	} catch (error) {
