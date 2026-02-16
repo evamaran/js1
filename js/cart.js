@@ -31,6 +31,8 @@ export function addToCart(product, selectedSize) {
   }
 
   saveCart(cart);
+
+  updateCartCount();
 }
 
 // ⭐ Legg de nye funksjonene HER — etter addToCart, men ikke inni den
