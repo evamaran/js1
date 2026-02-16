@@ -134,7 +134,6 @@
     z-index: 100;
   }
 
-  /* HEADER GRID  */
   .header-top {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
