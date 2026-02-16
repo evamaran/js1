@@ -1,5 +1,10 @@
 /* PRODUCT DETAILS PAGE — MOBILE FIRST */
 
+.product-page {
+  width: 100%;
+  padding: 1rem;
+}
+
 .product-details-card {
   display: flex;
   flex-direction: column;
@@ -70,6 +75,15 @@
 
 /* DESKTOP */
 @media (min-width: 601px) {
+  .product-page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .product-page > #product-details {
+    grid-column: 3 / span 8;
+  }
+
   .product-details-card {
     flex-direction: row;
     gap: 3rem;
