@@ -13,7 +13,11 @@
 				<div class="icon-group">
 					<a href="profile.html"><i class="fa-regular fa-user"></i></a>
 					<a href="favorites.html"><i class="fa-regular fa-heart"></i></a>
-					<a href="shopping-bag.html"><i class="fa-solid fa-bag-shopping"></i></a>
+					<a href="shopping-bag.html" class="cart-link">
+						<i class="fa-solid fa-bag-shopping"></i>
+						<span id="cart-count">0</span>
+					</a>
+
 				</div>
 			</div>
 		</div>
@@ -25,3 +29,9 @@
 			<a href="sale.html">Sale</a>
 		</nav>
 	</header>
+
+	<div id="cart-toast" class="cart-toast hidden">
+		<p>Added to cart</p>
+		<button class="go-to-cart">View cart</button>
+		<span class="close-toast">&times;</span>
+	</div>

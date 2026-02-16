@@ -1,5 +1,9 @@
 import { addToCart, updateCartCount } from "./cart.js";
 
+document.addEventListener("header-loaded", () => {
+  updateCartCount();
+}
+
 const API_URL = "https://v2.api.noroff.dev/rainy-days";
 const container = document.getElementById("product-details");
 

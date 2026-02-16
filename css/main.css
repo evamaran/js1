@@ -9,3 +9,50 @@
 @import url("_product-details.css");
 @import url("_cart.css");
 @import url("_checkout.css");
+
+/* Toast notification */
+.cart-toast {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background: #0B3A40;
+  color: #F0F4F5;
+  padding: 14px 18px;
+  border-left: 4px solid #F4AB67;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 9999;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cart-toast.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+}
+
+.cart-toast .close-toast {
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 8px;
+  color: #F0F4F5;
+}
+
+.cart-toast .go-to-cart {
+  background: #F4AB67;
+  color: #0B3A40;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.cart-toast .go-to-cart:hover {
+  background: #e29d5c;
+}

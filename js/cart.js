@@ -33,9 +33,27 @@ export function addToCart(product, selectedSize) {
   saveCart(cart);
 
   updateCartCount();
-}
 
-// ⭐ Legg de nye funksjonene HER — etter addToCart, men ikke inni den
+  showCartToast();
+}
+export function showCartToast() {
+  const toast = document.getElementById("cart-toast");
+  if (!toast) return;
+
+  toast.classList.remove("hidden");
+
+  setTimeout(() => {
+    toast.classList.add("hidden");
+  }, 3000);
+
+  const closeBtn = toast.querySelector(".close-toast");
+  closeBtn.onclick = () => toast.classList.add("hidden");
+
+  const goToCart = toast.querySelector(".go-to-cart");
+  goToCart.onclick = () => {
+    window.location.href = "cart.html";
+  };
+}
 
 export function getCartCount() {
   const cart = getCart();
