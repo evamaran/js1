@@ -9,5 +9,5 @@ async function loadComponent(id, file) {
   }
 }
 
-loadComponent("header", "../components/header.html");
-loadComponent("footer", "../components/footer.html");
+loadComponent("header", "js1/components/header.html");
+loadComponent("footer", "js1/components/footer.html");
