@@ -1,23 +1,13 @@
-// Loads shared layout components (header and footer) into the page
-function getBasePath() {
-  const depth = window.location.pathname.split("/").length - 3;
-  return depth > 0 ? "../".repeat(depth) : "";
-}
-
-const base = getBasePath();
-
-async function loadComponent(containerId, filePath) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
-
+async function loadComponent(id, file) {
+  const container = document.getElementById(id);
   try {
-    const response = await fetch(base + filePath);
+    const response = await fetch(file);
     const html = await response.text();
     container.innerHTML = html;
   } catch (error) {
-    console.error("Failed to load component:", base + filePath, error);
+    console.error("Failed to load component:", file, error);
   }
 }
 
-loadComponent("header", "components/header.html");
-loadComponent("footer", "components/footer.html");
+loadComponent("header", "../components/header.html");
+loadComponent("footer", "../components/footer.html");
