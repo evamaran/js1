@@ -1,11 +1,13 @@
-<header>
-  <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+<header class="header">
 
   <div class="header-top">
+
     <div class="header-left">
-      <label for="menu-checkbox" class="hamburger-icon">
+      <button class="hamburger" aria-expanded="false">
         <i class="fa-solid fa-bars"></i>
-      </label>
+      </button>
+
+      <input type="text" class="search" placeholder="Search...">
     </div>
 
     <div class="header-center">
@@ -18,27 +20,30 @@
       <div class="icon-group">
         <a href="profile.html"><i class="fa-regular fa-user"></i></a>
         <a href="favorites.html"><i class="fa-regular fa-heart"></i></a>
-	    <a href="cart.html" class="cart-link">
+        <a href="cart.html" class="cart-link">
           <i class="fa-solid fa-bag-shopping"></i>
           <span id="cart-count">0</span>
         </a>
       </div>
     </div>
+
   </div>
 
-  <nav class="header-nav">
-    <label for="menu-checkbox" class="close-icon">
+  <nav class="mobile-nav">
+    <button class="close-mobile-nav">
       <i class="fa-solid fa-xmark"></i>
-    </label>
+    </button>
     <a href="women/jackets.html">Women</a>
     <a href="men/jackets.html">Men</a>
     <a href="news.html">News</a>
     <a href="sale.html">Sale</a>
   </nav>
-</header>
 
-<div id="cart-toast" class="cart-toast hidden">
-  <p>Added to cart</p>
-  <button class="go-to-cart">View cart</button>
-  <span class="close-toast">&times;</span>
-</div>
+    <nav class="desktop-nav">
+    <a href="women/jackets.html">Women</a>
+    <a href="men/jackets.html">Men</a>
+    <a href="news.html">News</a>
+    <a href="sale.html">Sale</a>
+  </nav>
+
+</header>
