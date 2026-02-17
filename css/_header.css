@@ -143,6 +143,15 @@
     min-height: 64px;
   }
 
+  .header-left,
+  .header-center,
+  .header-right {
+    display: block;
+    flex: unset;
+    justify-content: unset;
+    align-items: unset;
+  }
+
   .header-left {
     grid-column: 1 / span 2;
   }
@@ -200,14 +209,4 @@
     font-weight: bold;
     padding: 10px;
   }
-
-  .header-left,
-  .header-center,
-  .header-right {
-    display: block;
-    flex: unset;
-    justify-content: unset;
-    align-items: unset;
-  }
-  
 }
