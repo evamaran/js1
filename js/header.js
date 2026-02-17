@@ -4,6 +4,10 @@ fetch("./components/header.html")
   .then(html => {
     document.getElementById("header").innerHTML = html;
 
+	const cartCount = document.getElementById("cart-count");
+	const cart = JSON.parse(localStorage.getItem("cart")) || [];
+	cartCount.textContent = cart.length;
+
     // Add elements
     const hamburger = document.querySelector('.hamburger');
     const mobileNav = document.querySelector('.mobile-nav');
