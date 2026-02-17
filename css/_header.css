@@ -202,4 +202,14 @@
     font-weight: bold;
     padding: 10px;
   }
+
+  .header-left,
+  .header-center,
+  .header-right {
+    display: block;
+    flex: unset;
+    justify-content: unset;
+    align-items: unset;
+  }
+  
 }
