@@ -1,5 +1,5 @@
 // Load header component
-fetch("/componentsheader.html")
+fetch("/components/header.html")
   .then(res => res.text())
   .then(html => {
     document.getElementById("header").innerHTML = html;
@@ -26,4 +26,7 @@ fetch("/componentsheader.html")
         document.body.style.overflow = '';
       }
     });
+	if (window.FontAwesome) {
+		window.FontAwesome.dom.i2svg();
+	}
   });
