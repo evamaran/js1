@@ -84,10 +84,27 @@
   font-size: 1.6rem;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .icon-group i {
   font-size: 1.6rem;
+}
+
+.cart-link {
+  position: relative;
+}
+
+#cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: #0B3A40;
+  color: #F0F4F5;
+  font-size: 0.7rem;
+  padding: 2px 5px;
+  border-radius: 50%;
+  line-height: 1;
 }
 
 @media (min-width: 601px) {
@@ -147,5 +164,6 @@
     color: #F0F4F5;
     text-decoration: none;
     font-size: 1.1rem;
+	text-decoration: none;
   }
 }
