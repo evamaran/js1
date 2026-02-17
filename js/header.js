@@ -1,5 +1,5 @@
 // Load header component
-fetch("header.html")
+fetch("/componentsheader.html")
   .then(res => res.text())
   .then(html => {
     document.getElementById("header").innerHTML = html;
