@@ -38,9 +38,17 @@
   display: none;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
-  gap: 24px;
+  justify-content: center;
+  gap: 32px;
   z-index: 2000;
+  padding: 40px 20px;
+}
+
+.mobile-nav a {
+  color: #F0F4F5;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .mobile-nav.open {
@@ -53,7 +61,7 @@
   right: 20px;
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #F0F4F5;
   cursor: pointer;
 }
@@ -68,9 +76,19 @@
 
 .icon-group {
   display: flex;
-  gap: 8px;
+  gap: 16px;
 }
 
+.icon-group a {
+  color: #0B3A40;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon-group i {
+  font-size: 1.6rem;
+}
 
 @media (min-width: 601px) {
 
