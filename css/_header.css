@@ -154,6 +154,8 @@
 
   .header-left {
     grid-column: 1 / span 2;
+    width: 100%;
+    justify-self: start;
   }
 
   .header-center {
@@ -163,6 +165,7 @@
 
   .header-right {
     grid-column: 9 / span 2;
+    width: 100%;
     justify-self: end;
   }
 
