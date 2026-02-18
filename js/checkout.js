@@ -63,6 +63,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     localStorage.removeItem("cart");
 
+	const orderData = {
+		orderNumber: Math.floor(Math.random() * 900000) + 100000,
+		total: totalEl.textContent.replace(" NOK", ""),
+		items: cart
+	};
+
+	localStorage.setItem("lastOrder", JSON.stringify(orderData));
+
     window.location.href = "order-complete.html";
   });
 });
