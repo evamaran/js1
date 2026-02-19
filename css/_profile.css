@@ -53,3 +53,28 @@
   color: #333;
   font-size: 0.95rem;
 }
+
+.favorites-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-top: 1rem;
+}
+
+.favorite-card {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+}
+
+.favorite-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.favorite-card img {
+  width: 100%;
+  border-radius: 6px;
+}
