@@ -5,13 +5,18 @@ async function loadComponent(id, file) {
     const html = await response.text();
     container.innerHTML = html;
 
-	if (id === "header") {
-		document.dispatchEvent(new Event("header-loaded"));
-	}
+    if (id === "header") {
+        // Header is now in the DOM → cart-count exists
+        import("./cart.js").then(module => {
+            module.updateCartCount();
+        });
 
-	} catch (error) {
-		console.error("Failed to load component:", file, error);
-	}
+        document.dispatchEvent(new Event("header-loaded"));
+    }
+
+  } catch (error) {
+    console.error("Failed to load component:", file, error);
+  }
 }
 
 loadComponent("header", "/js1/components/header.html");
