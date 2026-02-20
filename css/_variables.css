@@ -1,8 +1,7 @@
-/* Use this file to store your useful variables */
-/* This could be colors, fonts, or padding sizes! */
+/* GLOBAL VARIABLES */
 
 :root {
   --color-primary: #0B3A40;
   --color-secondary: #F0F4F5;
-  --font-main: "josephin-sans", sans-serif;
+  --font-main: "Josefin Sans", sans-serif;
 }

@@ -1,3 +1,5 @@
+/* CHECKOUT LAYOUT */
+
 .checkout-container {
   max-width: 900px;
   margin: 40px auto;
@@ -16,6 +18,8 @@
   grid-template-columns: 1fr;
   gap: 32px;
 }
+
+/* CHECKOUT SECTIONS */
 
 .checkout-section {
   background-color: #fff;
@@ -50,11 +54,15 @@
   margin-bottom: 12px;
 }
 
+/* CHECKOUT TWO COLUMN LAYOUT */
+
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
+
+/* CHECKOUT RADIO OPTIONS */
 
 .radio-option {
   display: flex;
@@ -82,6 +90,8 @@
   border-color: #0B3A40;
 }
 
+/* ORDER SUMMARY */
+
 .order-summary {
   background-color: #fff;
   border: 2px solid #0B3A40;
@@ -105,6 +115,8 @@
   font-weight: 600;
   margin-top: 16px;
 }
+
+/* CHECKOUT BUTTON */
 
 .checkout-btn {
   display: inline-block;
@@ -177,6 +189,8 @@
   border-bottom: 1px solid #ddd;
 }
 
+/* CONFIRMATION RETURN BUTTON */
+
 .return-home-btn {
   display: inline-block;
   margin-top: 20px;
@@ -193,8 +207,9 @@
   background-color: #e89a55;
 }
 
+/* CHECKOUT MEDIA QUERIES */
 
-@media (min-width: 800px) {
+@media (min-width: 601px) {
   .checkout-grid {
     grid-template-columns: 1fr 1fr;
   }

@@ -1,4 +1,4 @@
-/* === PRODUCT GRID (mobile-first) === */
+/* PRODUCT GRID WRAPPER */
 
 #product-list {
   display: grid;
@@ -9,7 +9,7 @@
   margin: 0 auto;
 }
 
-/* === PRODUCT CARD === */
+/* PRODUCT CARD */
 
 .product-card {
   background-color: #F0F4F5;
@@ -46,7 +46,7 @@
   color: #333;
 }
 
-/* === PRICE STYLING === */
+/* PRICE STYLING */
 
 .price {
   margin-top: 8px;
@@ -66,7 +66,7 @@
   font-weight: bold;
 }
 
-/* === SALE TAG === */
+/* SALE TAG */
 
 .discount-tag {
   position: absolute;
@@ -81,21 +81,21 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* === DESKTOP GRID === */
+/* PRODUCT GRID MEDIA QUERIES */
 
-@media (min-width: 600px) {
+@media (min-width: 601px) {
   #product-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 901px) {
   #product-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   #product-list {
     grid-template-columns: repeat(4, 1fr);
   }
