@@ -15,14 +15,33 @@
 
 <body>
 	<div id="header"></div>
-	<main class="container">
+	<main class="cart-container">
 		<h1>Shopping Cart</h1>
-		<div id="cart"></div>
-		<a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+		<div class="cart-item">
+			<img src="PATH_TO_IMAGE" alt="Product image">
+
+			<div class="cart-info">
+				<h3>Rainy Days Thunderbolt Jacket</h3>
+				<p>Size: S</p>
+				<p>Price: 139.99 NOK</p>
+			</div>
+			<div class="cart-actions">
+			<select>
+				<option value="1">1</option>
+				<option value="2">2</option>
+			</select>
+			<button class="remove-btn">Remove</button>
+			</div>
+		</div>
+
+		<div class="cart-summary">
+			<p>Total: 139.99 NOK</p>
+			<a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+		</div>
 	</main>
 
-<script src="js/header.js"></script>
-<script src="js/footer.js"></script>
+
+<script src="js/components.js"></script>
 <script type="module" src="js/cart-page.js"></script>
 
 </body>
