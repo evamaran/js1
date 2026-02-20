@@ -124,6 +124,7 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
+  display: inline-block;
 }
 
 .checkout-btn:hover {

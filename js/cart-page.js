@@ -14,14 +14,17 @@ function renderCart() {
 
   cartContainer.innerHTML = cart.map(item => `
     <div class="cart-item">
-      <img src="${item.image}" alt="${item.title}" class="cart-item-image">
 
-      <div class="cart-item-info">
+      <img src="${item.image}" alt="${item.title}">
+
+      <div class="cart-info">
         <h3>${item.title}</h3>
         <p>Size: ${item.size}</p>
-        <p>Price: ${item.price} NOK</p>
+        <p>${item.price} NOK</p>
+      </div>
 
-        <div class="cart-quantity">
+      <div class="cart-actions">
+        <div class="quantity-wrapper">
           <button class="qty-btn decrease" data-id="${item.id}" data-size="${item.size}">-</button>
           <span>${item.quantity}</span>
           <button class="qty-btn increase" data-id="${item.id}" data-size="${item.size}">+</button>
@@ -31,16 +34,18 @@ function renderCart() {
           Remove
         </button>
       </div>
+
     </div>
   `).join("");
 
-  // Add total price
   const total = calculateTotal(cart);
-  cartContainer.innerHTML += `
-    <div class="cart-total">
-      <h2>Total: ${total} NOK</h2>
-    </div>
-  `;
+
+  document.querySelector(".cart-container").innerHTML += `
+  <div class="cart-summary">
+    <p>Total: ${total} NOK</p>
+    <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+  </div>
+`;
 
   attachEventListeners();
   updateCartCount();
