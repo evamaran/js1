@@ -101,9 +101,10 @@
   margin-top: 32px;
   padding-top: 16px;
   border-top: 2px solid #0B3A40;
-  display: flex !important;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .cart-summary p {
