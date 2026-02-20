@@ -24,7 +24,7 @@ export function addToCart(product, selectedSize) {
       id: product.id,
       title: product.title,
       price: product.price,
-      image: product.image?.url,
+      image: product.image?.url || product.image || product.image_url || product.imageUrl,
       size: selectedSize,
       quantity: 1
     });
