@@ -53,6 +53,7 @@
 /* FOOTER LOGO AND COPYRIGHT */
 
 .footer-logo {
+  width: 100%;
   align-self: flex-start;
 }
 
@@ -87,6 +88,7 @@
   }
 
   .footer-logo {
+    width: auto;
     align-self: center;
   }
 
