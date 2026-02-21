@@ -1,5 +1,13 @@
 /* FOOTER STRUCTURE */
 
+.footer-logo {
+  background: red !important;
+  height: 200px !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+
 .footer {
   display: flex;
   flex-direction: column;
