@@ -53,18 +53,10 @@
   color: #F0F4F5;
   display: none;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 20px;
   z-index: 2000;
-  padding: 40px 20px;
-}
-
-.mobile-nav a {
-  color: #F0F4F5;
-  text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 600;
 }
 
 .mobile-nav.open {
@@ -72,14 +64,31 @@
 }
 
 .close-mobile-nav {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  align-self: flex-end;
   background: none;
   border: none;
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #F0F4F5;
   cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.mobile-nav a {
+  width: 100%;
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav a::after {
+  content: "›";
+  font-size: 1.4rem;
+  opacity: 0.7;
 }
 
 /* DESKTOP NAVIGATION */
