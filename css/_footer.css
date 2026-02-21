@@ -23,7 +23,7 @@
 /* FOOTER LINKS */
 
 .footer-links {
-  grid-column: 1 / span 2;
+  grid-column: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
