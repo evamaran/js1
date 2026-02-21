@@ -18,19 +18,21 @@ function renderProducts(products) {
     container.innerHTML = "";
 
     products.forEach(product => {
+        const card = document.createElement("div");
+        card.classList.add("product-card");
+
         const image = product.image?.url || "https://via.placeholder.com/400x500?text=No+image";
 
-        container.innerHTML += `
-            <div class="product-card">
-                <a href="product.html?id=${product.id}">
-                    <img src="${image}" alt="${product.image?.alt || product.title}">
-                    <h3>${product.title}</h3>
-                    <p>${product.price} NOK</p>
-                </a>
-
-                <i class="fa-regular fa-heart favorite-icon" data-id="${product.id}"></i>
-            </div>
+        card.innerHTML = `
+            <a href="product.html?id=${product.id}">
+                <img src="${image}" alt="${product.image?.alt || product.title}">
+                <h3>${product.title}</h3>
+                <p>${product.price} NOK</p>
+            </a>
+            <i class="fa-regular fa-heart favorite-icon" data-id="${product.id}"></i>
         `;
+
+        container.appendChild(card);
     });
 }
 
