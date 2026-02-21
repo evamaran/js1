@@ -55,7 +55,7 @@
 .footer-logo {
   margin-top: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .footer-logo img {
