@@ -54,6 +54,7 @@
 /* FOOTER LOGO AND COPYRIGHT */
 
 .footer-logo {
+  order: 2;
   display: block;
   margin-top: 10px;
   width: 100%;
@@ -66,7 +67,7 @@
 }
 
 .footer-copy {
-  text-align: center;
+  order: 3;text-align: center;
   font-size: 0.75rem;
   margin: 0;
   padding: 0;
@@ -90,12 +91,15 @@
   }
 
   .footer-logo {
-    width: auto;
-    align-self: center;
+    order: 0;
+	width: auto;
+	margin-top:0;
+	align-self: center;
   }
 
   .footer-copy {
-    width: 100%;
+    order: 3;
+	width: 100%;
     text-align: center;
   }
 }
