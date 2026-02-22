@@ -15,7 +15,6 @@ async function loadComponent(id, file) {
     }
 
   } catch (error) {
-    console.error("Failed to load component:", file, error);
   }
 }
 

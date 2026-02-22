@@ -2,6 +2,9 @@ const API_URL = "https://v2.api.noroff.dev/rainy-days";
 const container = document.getElementById("product-list");
 
 async function fetchProducts() {
+    // Loading indicator
+    container.innerHTML = "<p>Loading...</p>";
+
     try {
         const response = await fetch(API_URL);
         const data = await response.json();
@@ -15,6 +18,7 @@ async function fetchProducts() {
 }
 
 function renderProducts(products) {
+    // Clear loading text
     container.innerHTML = "";
 
     products.forEach(product => {
@@ -27,7 +31,7 @@ function renderProducts(products) {
             <a href="product.html?id=${product.id}">
                 <img src="${image}" alt="${product.image?.alt || product.title}">
                 <h3>${product.title}</h3>
-                <p>${product.price} NOK</p>
+                <p>${product.price.toFixed(2)} NOK</p>
             </a>
             <i class="fa-regular fa-heart favorite-icon" data-id="${product.id}"></i>
         `;

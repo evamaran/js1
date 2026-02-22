@@ -7,7 +7,9 @@ function renderCart() {
   const cart = getCart();
 
   if (cart.length === 0) {
+    // Update BOTH containers so UI resets correctly
     cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+    document.querySelector(".cart-container").innerHTML = "<p>Your cart is empty.</p>";
     updateCartCount();
     return;
   }
@@ -15,27 +17,22 @@ function renderCart() {
   // Render items
   cartContainer.innerHTML = cart.map(item => `
     <div class="cart-item">
-
       <img src="${item.image}" alt="${item.title}">
-
       <div class="cart-info">
         <h3>${item.title}</h3>
         <p>Size: ${item.size}</p>
         <p>${Number(item.price).toFixed(2)} NOK</p>
       </div>
-
       <div class="cart-actions">
         <div class="quantity-wrapper">
           <button class="qty-btn decrease" data-id="${item.id}" data-size="${item.size}">-</button>
           <span>${item.quantity}</span>
           <button class="qty-btn increase" data-id="${item.id}" data-size="${item.size}">+</button>
         </div>
-
         <button class="remove-btn" data-id="${item.id}" data-size="${item.size}">
           Remove
         </button>
       </div>
-
     </div>
   `).join("");
 
