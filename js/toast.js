@@ -1,15 +1,21 @@
 function showToast(product) {
   const container = document.getElementById("toast-container");
 
+  // Get correct image regardless of API structure
+  const image =
+    product.image?.url ||
+    product.images?.[0]?.src ||
+    "https://via.placeholder.com/100x100?text=No+image";
+
   const toast = document.createElement("div");
   toast.classList.add("toast");
 
   toast.innerHTML = `
-    <img src="${product.image}" alt="${product.title}">
+    <img src="${image}" alt="${product.title}">
     <div class="toast-content">
-      <div class="toast-title">${product.title} ble lagt i handlekurven</div>
+      <div class="toast-title">${product.title} was added to your cart</div>
       <div class="toast-actions">
-        <button onclick="window.location.href='/checkout/index.html'">Gå til kurv</button>
+        <button onclick="window.location.href='/checkout/index.html'">Go to cart</button>
       </div>
     </div>
     <button class="close-btn">&times;</button>
