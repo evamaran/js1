@@ -1,7 +1,7 @@
 function showToast(product) {
   const container = document.getElementById("toast-container");
 
-  // Get correct image regardless of API structure
+  // Find correct image for toast (try multiple properties for compatibility)
   const image =
     product.image?.url ||
     product.images?.[0]?.src ||
