@@ -6,7 +6,7 @@ async function loadComponent(id, file) {
     container.innerHTML = html;
 
     if (id === "header") {
-        // Header is now in the DOM → cart-count exists
+        // Header in DOM for cart count to work
         import("./cart.js").then(module => {
             module.updateCartCount();
         });

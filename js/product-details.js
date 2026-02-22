@@ -64,6 +64,7 @@ function renderProduct(product) {
 				const selectedSize = document.querySelector("#size").value;
 				addToCart(product, selectedSize);
 				updateCartCount();
+				showToast(product);
 		});
 
 		// FAVORITES: activate heart icon
