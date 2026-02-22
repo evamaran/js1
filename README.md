@@ -1,36 +1,56 @@
-# RainyDays website for HTML and CSS course
+# Rainy Days – JavaScript 1 Project
 
-This assignment was to create a responsive website using the RainyDays model created in Figma during the Design Course. I created this with a focus on the provided marking guide, paying special attention to responsiveness across screen sizes, semantic HTML, DRY CSS, a well-working navigation and accessible navigation and overall usability.
+A responsive e‑commerce storefront built as part of the JavaScript 1 course.  
+The site displays products fetched from the Noroff API, supports size selection, and includes a fully functional shopping cart with persistent storage.
+
+---
 
 ## Live version
 
 The website is published via GitHub:
-[https://evamaran.github.io/html-css-evaandersen/](https://evamaran.github.io/html-css-evaandersen/)
+[https://evamaran.github.io/js1/](https://evamaran.github.io/js1/)
 
-## Folder structure
+---
 
-- index.html - Homepage
-- css/main.css - Main stylesheet that imports my other CSS files
-- images/ - Contains all images used in this project
-- README.md - This file
+## Features
 
-## Validation and testing
+- Dynamic product listing pages
+- Product detail view with size selection
+- Add‑to‑cart functionality with toast notifications
+- Shopping cart stored in `localStorage`
+- Cart page with quantity management and order summary
+- Reusable header and footer loaded through JavaScript components
+- Responsive layout for mobile, tablet, and desktop
+- Clean, modular JavaScript structure (ES modules)
 
-- HTML and CSS validated using W3C validator
-- Tested in Chrome, Firefox, and mobile (iPhone)
-- Accessibility checks: color contrast and keyboard navigation
-- Verified clean experience in incognito mode
+---
 
-## What I learned
+## Technologies Used
 
-- Structure HTML to make it easy to read and follow
-- Create and work with stylesheets and mediaqueries
-- The importance of testing in final environment
-- Troubleshooting makes me want to pull out all my hair, but in the end it is very rewarding!
+- HTML5  
+- CSS3  
+- Vanilla JavaScript  
+- Noroff API (Online Shop endpoint)  
+- GitHub Pages (Deployment)
 
-## Future improvements
+---
 
-I hope future assignments will allow me to:
-- Add a cart functionality that will display the actual product added to it
-- Make cooler animations and effects
-- Have buttons that create actions.
+## API
+
+All product data is fetched from the Noroff API:
+
+`https://v2.api.noroff.dev/online-shop`
+
+---
+
+## Known Limitations
+
+- Checkout flow is front‑end only  
+- Profile page is static  
+- Some informational pages contain placeholder content  
+
+---
+
+## License
+
+This project was created for educational purposes as part of the Noroff Front‑End Development program.
