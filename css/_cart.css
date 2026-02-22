@@ -88,7 +88,7 @@
   color: #d62828;
   font-size: 0.9rem;
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .remove-btn:hover {
