@@ -23,7 +23,7 @@ export function addToCart(product, selectedSize) {
     cart.push({
       id: product.id,
       title: product.title,
-      price: product.price,
+      price: Number(product.price).toFixed(2),
       image: product.image?.url || product.image || product.image_url || product.imageUrl,
       size: selectedSize,
       quantity: 1
