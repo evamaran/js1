@@ -121,7 +121,7 @@ main {
 button:focus,
 a:focus,
 input:focus {
-  outline: 3px solid #FFA500;
+  outline: 1px solid #0B3A40;
   outline-offset: 2px;
 }
 
