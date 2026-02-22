@@ -15,7 +15,7 @@ function showToast(product) {
     <div class="toast-content">
       <div class="toast-title">${product.title} was added to your cart</div>
       <div class="toast-actions">
-        <button onclick="window.location.href='/cart.html'">Go to cart</button>
+        <button onclick="window.location.href='cart.html'">Go to cart</button>
       </div>
     </div>
     <button class="close-btn">&times;</button>
